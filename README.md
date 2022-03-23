@@ -9,6 +9,7 @@ ENG: New website project, developed for the Architecture office in the city of I
 ## Instalação
 
 PT-BR: Instale as dependências do projeto utilizando yarn ou npm.
+
 ENG: Install project dependencies using yarn or npm.
 
 ```bash
@@ -33,4 +34,4 @@ ENG: Install project dependencies using yarn or npm.
 
 **Front-end:** HTML, SCSS, JS, jQuery, Bootstrap, UIKit.
 
-**Back-end:** Codeigniter 3 PHP
+**Back-end:** Codeigniter 3 e MySQL
