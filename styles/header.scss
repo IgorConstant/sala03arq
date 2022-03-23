@@ -1,0 +1,48 @@
+header {
+
+	.uk-navbar-container {
+		padding: 30px 80px;
+	}
+
+	.brandSala03 {
+		>img {
+			width: 260px;
+		}
+	}
+
+	.uk-navbar-container:not(.uk-navbar-transparent) {
+		background: #fff;
+	}
+
+	.uk-button-default {
+		border: none;
+
+		>img {
+			width: 87px;
+		}
+	}
+}
+
+.uk-offcanvas-bar {
+	.uk-nav-primary>li>a {
+		color: #D1D1D1;
+		font-size: 90px;
+		text-transform: uppercase;
+	}
+
+	.uk-close {
+		color: #D1D1D1;
+	}
+
+	.uk-icon>* {
+		width: 40px;
+	}
+}
+
+
+@media (min-width: 959px) {
+	.uk-offcanvas-bar {
+		width: 850px;
+		background: #fff;
+	}
+}
