@@ -30,6 +30,13 @@ ENG: Install project dependencies using yarn or npm.
 | Roboto Condensed                  | https://fonts.google.com/specimen/Roboto+Condensed?query=Roboto+Condensed  |
 
 
+## EQUIPE
+
+| Designers e Desenvolvimento                                           | Figma                                               |
+| -----------------                                                     | ---------------------------------------------------------------- |
+| Gabriel Chaves, Marilia Gabriela e Igor H. Constant                   | https://www.figma.com/file/c6XlOtOYlp1djKAIIbHIX4/sala03.arq.br?node-id=0%3A1  |
+
+
 ## Stack utilizada
 
 **Front-end:** HTML, SCSS, JS, jQuery, Bootstrap, UIKit.
