@@ -1,7 +1,13 @@
 header {
+	filter: drop-shadow(0px 4px 50px rgba(0, 0, 0, 0.1));
 
 	.uk-navbar-container {
-		padding: 30px 80px;
+
+		padding: 30px 20px;
+
+		@media(min-width: 1200px) {
+			padding: 30px 50px;
+		}
 	}
 
 	.brandSala03 {
@@ -24,10 +30,51 @@ header {
 }
 
 .uk-offcanvas-bar {
-	.uk-nav-primary>li>a {
-		color: #D1D1D1;
-		font-size: 90px;
-		text-transform: uppercase;
+	.uk-nav-primary {
+
+		@media(min-width: 1200px) {
+			margin-top: 40px;
+		}
+
+		>li {
+
+
+			>a {
+				color: #d1d1d1;
+				font-size: 90px;
+				text-transform: uppercase;
+				letter-spacing: 0.05em;
+				display: flex;
+				justify-content: end;
+
+				&:hover {
+					color: #000000;
+				}
+			}
+		}
+	}
+
+	.socialIcons {
+		float: right;
+
+		>li {
+			display: inline-block;
+			margin-right: 20px;
+
+			a {
+
+				.fa-facebook-square,
+				.fa-instagram {
+					color: #D1D1D1;
+					font-size: 40px;
+
+					&:hover {
+						color: #000000;
+					}
+				}
+
+			}
+		}
 	}
 
 	.uk-close {
@@ -36,6 +83,13 @@ header {
 
 	.uk-icon>* {
 		width: 40px;
+	}
+
+	p {
+		color: #7E7E7E;
+		font-size: 12px;
+		margin: 80px 0;
+		text-align: right;
 	}
 }
 

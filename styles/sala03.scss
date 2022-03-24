@@ -1,0 +1,49 @@
+#sala03 {
+	.content {
+		width: 312px;
+		height: 491px;
+		padding: 20% 0 0 0;
+
+		h2 {
+			text-transform: uppercase;
+			font-weight: 500;
+			font-size: 45px;
+		}
+
+		p {
+			font-size: 14px;
+			color: #000000;
+			letter-spacing: 0.05em;
+		}
+	}
+
+
+	.funcionariosSala03 {
+		.contentTitle {
+
+			text-align: center;
+			padding: 0px 0;
+			background: yellowgreen;
+
+
+			h1 {
+				text-transform: uppercase;
+				font-weight: 500;
+				font-size: 75px;
+				/*position: relative;
+				top: 50%;
+				transform: translateY(-50%);*/
+			}
+		}
+
+
+		.photoEquip {
+			>img {
+				-webkit-filter: grayscale(100%);
+				filter: grayscale(100%);
+				filter: gray;
+			}
+		}
+	}
+
+}
