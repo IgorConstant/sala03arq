@@ -11,6 +11,9 @@
 
     <title><?php echo $titulo_pagina ?></title>
 
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/7bc0885a91.js"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="<?php echo base_url('assets/site/css/main.css') ?>">
 </head>
@@ -40,9 +43,16 @@
         <div class="uk-offcanvas-bar">
 
             <button class="uk-offcanvas-close" type="button" uk-close></button>
-            <ul class="uk-nav uk-nav-primary uk-margin-auto-vertical">
-                <li><a href="#">A Sala 03</a></li>
+            <ul class="uk-nav uk-nav-primary">
+                <li><a href="a-sala03">A Sala 03</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Contato</a></li>
+                <div class="socialIcons">
+                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                </div>
             </ul>
+            <p><?php echo date("Y") ?> - SALA 03 ARQUITETURA© - TODOS OS DIREITOS RESERVADOS <br> AGÊNCIA DUETTO</p>
         </div>
     </div>
 

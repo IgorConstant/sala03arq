@@ -27,4 +27,13 @@ class Site extends CI_Controller
         $this->load->view('web/layout/header', $data);
         $this->load->view('web/home');
     }
+
+    
+    public function sala03()
+    {
+        $data['titulo_pagina'] = 'Sala 03 Arquitetura';
+
+        $this->load->view('web/layout/header', $data);
+        $this->load->view('web/a-sala03');
+    }
 }
