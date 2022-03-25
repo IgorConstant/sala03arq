@@ -51,7 +51,7 @@
                     </h6>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <?php echo anchor('homegerenciador', '<span><i class="fas fa-laptop-code"></i> Home</span>', array('class' => 'nav-link')) ?>
+                            <?php echo anchor('banners', '<span><i class="fas fa-laptop-code"></i> Banners Home</span>', array('class' => 'nav-link')) ?>
                         </li>
                         <li class="nav-item">
                             <?php echo anchor('funcionariosgerenciador', '<span><i class="fas fa-laptop-code"></i> Funcionários</span>', array('class' => 'nav-link')) ?>

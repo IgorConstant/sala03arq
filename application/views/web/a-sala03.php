@@ -50,7 +50,7 @@
     <div class="funcionariosSala03">
         <div class="uk-container-expand">
             <div class="uk-grid-collapse" uk-grid>
-                <div class="uk-width-1-2@m">
+                <div class="uk-width-1-2@m uk-flex uk-flex-center uk-flex uk-flex-middle">
                     <div>
                         <div class="contentTitle">
                             <h1>Equipe</h1>
@@ -76,7 +76,7 @@
                 <div>
                     <div>
                         <div class="photoEquip">
-                            <img src="<?php echo base_url("assets/site/images/moca-que-naosei-nome-2.jpg") ?>" alt="Moça">
+                            <img src="<?php echo base_url("assets/site/images/funcionario2.jpg") ?>" alt="Giovanna Passador">
                         </div>
                     </div>
                 </div>
@@ -90,12 +90,30 @@
                 <div>
                     <div>
                         <div class="photoEquip">
-                            <img src="<?php echo base_url("assets/site/images/moca-que-naosei-nome4.jpg") ?>" alt="Giovanna Passador">
+                            <img src="<?php echo base_url("assets/site/images/funcionario3.jpg") ?>" alt="Moça">
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div class="uk-card uk-card-default uk-card-body">Item</div>
+                    <div>
+                        <div class="photoEquip">
+                            <img src="<?php echo base_url("assets/site/images/moca-que-naosei-nome-2.jpg") ?>" alt="Moça">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div class="photoEquip">
+                            <img src="<?php echo base_url("assets/site/images/funcionario15.jpg") ?>" alt="Giovanna Passador">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div class="photoEquip">
+                            <img src="<?php echo base_url("assets/site/images/moca-que-naosei-nome4.jpg") ?>" alt="Giovanna Passador">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

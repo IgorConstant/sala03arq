@@ -6,15 +6,11 @@
                 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
                     <ul class="uk-slideshow-items">
-                        <li>
-                            <img src="<?php echo base_url('assets/site/images/main-banner-no-shadow.jpg') ?>" alt="" uk-cover>
-                        </li>
-                        <li>
-                            <img src="<?php echo base_url('assets/site/images/main-banner-no-shadow.jpg') ?>" alt="" uk-cover>
-                        </li>
-                        <li>
-                            <img src="<?php echo base_url('assets/site/images/main-banner-no-shadow.jpg') ?>" alt="" uk-cover>
-                        </li>
+                        <?php foreach ($app_home as $banner) { ?>
+                            <li>
+                                <img class="uk-width-1-1" src="upload/banners/<?= $banner->banner_imagem ?>" alt="<?= $banner->nome_banner ?>">
+                            </li>
+                        <?php } ?>
                     </ul>
 
                     <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
