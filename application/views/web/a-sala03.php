@@ -57,64 +57,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="uk-width-expand@m">
-                    <div>
-                        <div class="photoEquip">
-                            <img src="<?php echo base_url("assets/site/images/pedro-antunes.jpg") ?>" alt="Pedro Antunes">
+                <?php foreach ($app_funcionarios as $equipe) { ?>
+                    <div class="uk-width-1-4@m">
+                        <div>
+                            <div class="photoEquip">
+                                <img class="image" src="upload/equipe/<?= $equipe->foto_funcionario ?>" alt="<?= $equipe->nome_funcionario ?>">
+                                <div class="overlay">
+                                    <div class="nomeFuncionario"><?= $equipe->nome_funcionario ?></div>
+                                    <div class="cargoFuncionario"><?= $equipe->cargo_funcionario ?></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="uk-width-expand@m">
-                    <div>
-                        <div class="photoEquip">
-                            <img src="<?php echo base_url("assets/site/images/moca-que-nao-sei-nome.jpg") ?>" alt="Moça">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-collapse uk-text-center" uk-grid>
-                <div>
-                    <div>
-                        <div class="photoEquip">
-                            <img src="<?php echo base_url("assets/site/images/funcionario2.jpg") ?>" alt="Giovanna Passador">
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <div class="photoEquip">
-                            <img src="<?php echo base_url("assets/site/images/giovanna-passador.jpg") ?>" alt="Giovanna Passador">
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <div class="photoEquip">
-                            <img src="<?php echo base_url("assets/site/images/funcionario3.jpg") ?>" alt="Moça">
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <div class="photoEquip">
-                            <img src="<?php echo base_url("assets/site/images/moca-que-naosei-nome-2.jpg") ?>" alt="Moça">
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <div class="photoEquip">
-                            <img src="<?php echo base_url("assets/site/images/funcionario15.jpg") ?>" alt="Giovanna Passador">
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <div class="photoEquip">
-                            <img src="<?php echo base_url("assets/site/images/moca-que-naosei-nome4.jpg") ?>" alt="Giovanna Passador">
-                        </div>
-                    </div>
-                </div>
+                <?php } ?>
             </div>
         </div>
     </div>

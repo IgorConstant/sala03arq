@@ -14,6 +14,9 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7bc0885a91.js"></script>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="<?php echo base_url("assets/dashboard/images/favicon-sala03.png") ?>" type="image/x-icon">
+
 
     <!-- CSS -->
     <link rel="stylesheet" href="<?php echo base_url('assets/dashboard/css/dashboard.css') ?>">
@@ -54,7 +57,7 @@
                             <?php echo anchor('banners', '<span><i class="fas fa-laptop-code"></i> Banners Home</span>', array('class' => 'nav-link')) ?>
                         </li>
                         <li class="nav-item">
-                            <?php echo anchor('funcionariosgerenciador', '<span><i class="fas fa-laptop-code"></i> Funcionários</span>', array('class' => 'nav-link')) ?>
+                            <?php echo anchor('equipe', '<span><i class="fas fa-laptop-code"></i> Equipe</span>', array('class' => 'nav-link')) ?>
                         </li>
                         <li class="nav-item">
                             <?php echo anchor('sala03gerenciador', '<span><i class="fas fa-laptop-code"></i> A Sala 03</span>', array('class' => 'nav-link')) ?>

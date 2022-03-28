@@ -20,7 +20,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ($usuarios as $row) { ?>
+                    <?php foreach ($app_usuarios as $row) { ?>
                         <tr>
                             <td scope="row"><i class="fas fa-user"></i> &nbsp; <?= $row->nome ?></td>
                             <td><a class="sendMail" href="mailto:<?= $row->email ?>"><i class="fas fa-envelope"></i>&nbsp; <?= $row->email ?></a></td>

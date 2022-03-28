@@ -9,6 +9,9 @@
     <meta name="description" content="O estilo SALA 03 é contemporâneo, onde “menos é mais”, simplicidade em voga e o uso inteligente de materiais.">
     <meta name="author" content="Igor Henrique Constant">
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="<?php echo base_url("assets/site/images/favicon-sala03.png") ?>" type="image/x-icon">
+
     <title><?php echo $titulo_pagina ?></title>
 
     <!-- FontAwesome -->
@@ -21,7 +24,7 @@
 <body>
 
     <header>
-        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;">
             <nav class="uk-navbar-container" uk-navbar="dropbar: true;" style="position: relative; z-index: 980;">
                 <div class="uk-navbar-left">
                     <div class="brandSala03">
@@ -48,8 +51,8 @@
                 <li><a href="#">Projetos</a></li>
                 <li><a href="#">Contato</a></li>
                 <div class="socialIcons">
-                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://pt-br.facebook.com/Sala03arquitetura/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="https://www.instagram.com/sala03_arquitetura/" target="_blank"><i class="fab fa-instagram"></i></a></li>
                 </div>
             </ul>
             <p><?php echo date("Y") ?> - SALA 03 ARQUITETURA© - TODOS OS DIREITOS RESERVADOS <br> AGÊNCIA DUETTO</p>

@@ -1,6 +1,7 @@
 <script src="<?php echo base_url('assets/dashboard/js/jquery.min.js') ?>"></script>
 <script src="<?php echo base_url('assets/dashboard/js/bootstrap.bundle.min.js') ?>"></script>
 <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+<script src="<?php echo base_url('assets/dashboard/js/button.js') ?>"></script>
 
 <script>
     $(document).ready(function() {

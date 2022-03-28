@@ -15,10 +15,10 @@ class Usuarios extends CI_Controller
 
     public function index()
     {
-        $data['titulo_site'] = 'Gerenciador de Senhas - Duetto.ag';
+        $data['titulo_site'] = 'Gerenciador';
         $data['titulo_pagina'] = 'Usuários';
 
-        $data['usuarios'] = $this->usuarios_model->getUsuarios();
+        $data['app_usuarios'] = $this->usuarios_model->getUsuarios();
 
         $this->load->view('dashboard/header', $data);
         $this->load->view('dashboard/listUsers');

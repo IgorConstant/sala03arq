@@ -10,6 +10,11 @@ class Site_model extends CI_Model
     {
         return $this->db->get('app_home')->result();
     }
+
+    public function listarEquipe()
+    {
+        return $this->db->get('app_funcionarios')->result();
+    }
 }
 
 /* End of file ModelName.php */
