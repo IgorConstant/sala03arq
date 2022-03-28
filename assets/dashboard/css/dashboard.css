@@ -229,3 +229,13 @@ table.dataTable thead td {
 .btn-outline-success {
 	font-size: 14px;
 }
+
+
+.funcionarioFoto {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
