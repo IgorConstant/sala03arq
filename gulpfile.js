@@ -25,9 +25,9 @@ gulp.task('sass', compilarSass);
 
 function gulpJS() {
 	return gulp.src([
-			'node_modules/uikit/dist/js/uikit-core.min.js',
-			'node_modules/uikit/dist/js/uikit.min.js'
-		])
+		'node_modules/uikit/dist/js/uikit-core.min.js',
+		'node_modules/uikit/dist/js/uikit.min.js'
+	])
 
 		.pipe(concat('main.js'))
 		.pipe(uglify('main.js'))
