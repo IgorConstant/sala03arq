@@ -8,6 +8,7 @@
                         <p>Criado em 2014, SALA03 é a consolidação de profissionais que trabalham juntos há mais de dez anos. O escritório surgiu com o objetivo de oferecer a cada cliente um serviço completo, centralizando num único lugar e equipe a criação de projeto arquitetônico, interiores e a administração da obra.</p>
                         <p>A fusão do projeto arquitetônico à natureza! O estilo SALA03 é contemporâneo, onde “menos é mais”, simplicidade em voga e o uso inteligente de materiais. Prezamos pela privacidade de quem vai ocupar esses lares, fluidez aos ambientes e, acima de tudo, projetos para pessoas.</p>
                     </div>
+                    <div class="line"></div>
                 </div>
             </div>
             <div class="uk-width-expand@m">

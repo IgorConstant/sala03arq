@@ -9,7 +9,7 @@
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7bc0885a91.js"></script>
@@ -64,9 +64,6 @@
                         </li>
                         <li class="nav-item">
                             <?php echo anchor('portfoliogerenciador', '<span><i class="fas fa-laptop-code"></i> Portfólio</span>', array('class' => 'nav-link')) ?>
-                        </li>
-                        <li class="nav-item">
-                            <?php echo anchor('contatogerenciador', '<span><i class="fas fa-laptop-code"></i> Contato</span>', array('class' => 'nav-link')) ?>
                         </li>
                     </ul>
                     <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">

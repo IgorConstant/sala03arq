@@ -38,4 +38,13 @@ class Site extends CI_Controller
         $this->load->view('web/layout/header', $data);
         $this->load->view('web/a-sala03');
     }
+
+
+    public function contato()
+    {
+        $data['titulo_pagina'] = 'Contato - Sala 03 Arquitetura';
+
+        $this->load->view('web/layout/header', $data);
+        $this->load->view('web/contato');
+    }
 }
