@@ -1,0 +1,25 @@
+#contato {
+  padding: 100px 0;
+
+  .content {
+    p {
+      font-family: "Roboto Condensed";
+      font-weight: 700;
+      font-size: 46px;
+      line-height: 24px;
+      /* or 52% */
+
+      text-align: right;
+      color: #000000;
+      text-transform: uppercase;
+    }
+
+    .btnTel {
+      background: #000000;
+      color: #ffffff;
+      text-decoration: none;
+      width: 342px;
+      height: 55px;
+    }
+  }
+}

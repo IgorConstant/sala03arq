@@ -17,13 +17,10 @@
 		}
 	}
 
-
 	.funcionariosSala03 {
 		.contentTitle {
-
 			text-align: center;
 			padding: 0px 0;
-
 
 			h1 {
 				text-transform: uppercase;
@@ -32,11 +29,10 @@
 			}
 		}
 
-
 		.photoEquip {
 			position: relative;
 
-			>img {
+			> img {
 				-webkit-filter: grayscale(100%);
 				filter: grayscale(100%);
 				filter: gray;
@@ -54,10 +50,9 @@
 				height: 100%;
 				width: 100%;
 				opacity: 0;
-				transition: .5s ease;
+				transition: 0.5s ease;
 				background: rgba(0, 0, 0, 0.9);
 			}
-
 		}
 
 		.photoEquip:hover .overlay {
@@ -78,7 +73,6 @@
 			text-align: center;
 		}
 
-
 		.cargoFuncionario {
 			position: absolute;
 			top: 60%;
@@ -93,7 +87,11 @@
 			line-height: 24px;
 			color: #ffffff;
 		}
-
 	}
 
+	.line {
+		width: 315px;
+		height: 1.5px;
+		background: #d1d1d1;
+	}
 }
