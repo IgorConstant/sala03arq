@@ -1,6 +1,6 @@
 body {
 	font-size: 0.875rem;
-	font-family: "Poppins", sans-serif !important;
+	font-family: "Roboto Condensed", sans-serif !important;
 }
 
 .feather {
@@ -90,8 +90,8 @@ body {
 .sidebar .nav-link {
 	font-weight: 700;
 	color: #333;
-	font-size: 14px;
-	font-family: "Poppins", sans-serif;
+	font-size: 15px;
+	font-family: "Roboto Condensed", sans-serif;
 	text-transform: uppercase;
 }
 
@@ -218,7 +218,7 @@ hr {
 
 td,
 th {
-	font-size: 10px !important;
+	font-size: 14px !important;
 }
 
 table.dataTable thead th,
@@ -229,7 +229,6 @@ table.dataTable thead td {
 .btn-outline-success {
 	font-size: 14px;
 }
-
 
 .funcionarioFoto {
 	width: 50px;
