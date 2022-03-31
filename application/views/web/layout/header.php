@@ -9,6 +9,9 @@
     <meta name="description" content="O estilo SALA 03 é contemporâneo, onde “menos é mais”, simplicidade em voga e o uso inteligente de materiais.">
     <meta name="author" content="Igor Henrique Constant">
 
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?php echo base_url("assets/site/images/favicon-sala03.png") ?>" type="image/x-icon">
 
@@ -47,7 +50,6 @@
 
             <button class="uk-offcanvas-close" type="button" uk-close></button>
             <ul class="uk-nav uk-nav-primary">
-                <li><a href="home">Home</a></li>
                 <li><a href="a-sala03">A Sala 03</a></li>
                 <li><a href="#">Projetos</a></li>
                 <li><a href="contato">Contato</a></li>
@@ -64,4 +66,9 @@
     <!-- JS -->
     <script src="<?php echo base_url('assets/site/js/main.js') ?>"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
