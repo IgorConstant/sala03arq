@@ -4,6 +4,11 @@ body {
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
+html,
+* {
+	-webkit-font-smoothing: antialiased;
+}
+
 h1,
 h2,
 h3,
@@ -36,5 +41,20 @@ h6 {
 		width: 15px;
 		height: 15px;
 		border-radius: 0;
+	}
+}
+
+#map {
+	position: relative;
+	z-index: 1;
+	height: 583px;
+
+	.gm-style-iw-d {
+
+		h5,
+		p {
+			font-family: 'Roboto Condensed', sans-serif;
+			color: #000;
+		}
 	}
 }
