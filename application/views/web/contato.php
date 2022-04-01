@@ -3,7 +3,7 @@
     <div uk-grid>
       <div class="uk-width-3-5@m">
         <div>
-          <img src="assets/site/images/mapa-placeholder.png" alt="Map Placeholder">
+          <div id="map"></div>
         </div>
       </div>
       <div class="uk-width-1-3@m">
@@ -33,6 +33,9 @@
               <div class="uk-form-controls">
                 <textarea class="uk-textarea" id="inputMensagem" name="mensagemCliente" rows="5" placeholder="Mensagem *" required></textarea>
               </div>
+            </div>
+            <div class="uk-margin">
+              <button class="uk-button uk-button-default uk-width-1-1" type="submit">Quero Receber um contato</button>
             </div>
           </form>
         </div>

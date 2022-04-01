@@ -60,10 +60,10 @@
                             <?php echo anchor('equipe', '<span><i class="fas fa-laptop-code"></i> Equipe</span>', array('class' => 'nav-link')) ?>
                         </li>
                         <li class="nav-item">
-                            <?php echo anchor('sala03gerenciador', '<span><i class="fas fa-laptop-code"></i> A Sala 03</span>', array('class' => 'nav-link')) ?>
+                            <?php echo anchor('conteudo', '<span><i class="fas fa-laptop-code"></i> A Sala 03</span>', array('class' => 'nav-link')) ?>
                         </li>
                         <li class="nav-item">
-                            <?php echo anchor('portfoliogerenciador', '<span><i class="fas fa-laptop-code"></i> Portfólio</span>', array('class' => 'nav-link')) ?>
+                            <?php echo anchor('portfolio', '<span><i class="fas fa-laptop-code"></i> Portfólio</span>', array('class' => 'nav-link')) ?>
                         </li>
                     </ul>
                     <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
