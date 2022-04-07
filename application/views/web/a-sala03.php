@@ -1,76 +1,60 @@
 <section id="sala03">
     <div class="uk-container-expand">
-        <div class="uk-grid-collapse" uk-grid>
-            <div class="uk-width-1-3@m uk-flex uk-flex-center uk-flex uk-flex-middle">
+        <div class="uk-child-width-1-2@s uk-child-width-1-2@m" uk-grid>
+            <div>
                 <div>
                     <div class="content" data-aos="fade-right" data-aos-duration="3000">
-                        <h2>A Sala 03</h2>
-                        <p>Criado em 2014, SALA03 é a consolidação de profissionais que trabalham juntos há mais de dez anos. O escritório surgiu com o objetivo de oferecer a cada cliente um serviço completo, centralizando num único lugar e equipe a criação de projeto arquitetônico, interiores e a administração da obra.</p>
-                        <p>A fusão do projeto arquitetônico à natureza! O estilo SALA03 é contemporâneo, onde “menos é mais”, simplicidade em voga e o uso inteligente de materiais. Prezamos pela privacidade de quem vai ocupar esses lares, fluidez aos ambientes e, acima de tudo, projetos para pessoas.</p>
+                        <?php foreach ($app_conteudo as $text) { ?>
+                            <h2><?= $text->titulo ?></h2>
+                            <p><?= $text->conteudo ?></p>
+                        <?php } ?>
                     </div>
-                    <div class="line"></div>
                 </div>
             </div>
-            <div class="uk-width-expand@m">
-                <div class="uk-text-center uk-grid-collapse" uk-grid>
-                    <div class="uk-width-1-3@m">
-                        <div uk-lightbox>
-                            <a class="uk-inline" href="<?php echo base_url("assets/site/images/img-example.jpg") ?>" data-caption="Caption 1">
-                                <img src="<?php echo base_url("assets/site/images/img-example.jpg") ?>" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="uk-width-expand@m">
-                        <div uk-lightbox>
-                            <a class="uk-inline" href="<?php echo base_url("assets/site/images/img-example2.jpg") ?>" data-caption="Caption 1">
-                                <img src="<?php echo base_url("assets/site/images/img-example2.jpg") ?>" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="uk-text-center uk-grid-collapse" uk-grid>
-                    <div class="uk-width-1-3@m">
-                        <div uk-lightbox>
-                            <a class="uk-inline" href="<?php echo base_url("assets/site/images/img-example3.jpg") ?>" data-caption="Caption 1">
-                                <img src="<?php echo base_url("assets/site/images/img-example3.jpg") ?>" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="uk-width-expand@m">
-                        <div uk-lightbox>
-                            <a class="uk-inline" href="<?php echo base_url("assets/site/images/img-example4.jpg") ?>" data-caption="Caption 1">
-                                <img src="<?php echo base_url("assets/site/images/img-example4.jpg") ?>" alt="">
-                            </a>
-                        </div>
+            <div>
+                <div>
+                    <div class="imgAbout">
+                        <figure>
+                            <img src="<?php echo base_url("assets/site/images/socios-sala03.png") ?>" alt="Sócios">
+                        </figure>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="sliderSala03">
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+                <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                    <li>
+                        <img src="<?php echo base_url("assets/site/images/foto1.png") ?>" alt="">
+                    </li>
+                    <li class="gap">
+                        <img src="<?php echo base_url("assets/site/images/foto2.png") ?>" alt="">
+                    </li>
+                    <li class="gap gap-right">
+                        <img src="<?php echo base_url("assets/site/images/foto3.png") ?>" alt="">
+                    </li>
+                    <li>
+                        <img src="<?php echo base_url("assets/site/images/foto4.png") ?>" alt="">
+                    </li>
+                </ul>
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
+        </div>
 
-    <div class="funcionariosSala03">
-        <div class="uk-container-expand">
-            <div class="uk-grid-collapse" uk-grid>
-                <div class="uk-width-1-2@m uk-flex uk-flex-center uk-flex uk-flex-middle">
-                    <div>
-                        <div class="contentTitle">
-                            <h1>Equipe</h1>
-                        </div>
-                    </div>
-                </div>
-                <?php foreach ($app_funcionarios as $equipe) { ?>
-                    <div class="uk-width-1-4@m">
+        <div class="equipeSala03" data-aos="fade-down" data-aos-duration="3000">
+            <h1 class="uk-text-center uk-margin-remove">Nossa equipe</h1>
+
+            <div class="photoEquip">
+                <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-text-center" uk-grid>
+                    <?php foreach ($app_funcionarios as $equipe) { ?>
                         <div>
-                            <div class="photoEquip">
+                            <div>
                                 <img class="image" src="upload/equipe/<?= $equipe->foto_funcionario ?>" alt="<?= $equipe->nome_funcionario ?>">
-                                <div class="overlay">
-                                    <div class="nomeFuncionario"><?= $equipe->nome_funcionario ?></div>
-                                    <div class="cargoFuncionario"><?= $equipe->cargo_funcionario ?></div>
-                                </div>
                             </div>
                         </div>
-                    </div>
-                <?php } ?>
+                    <?php } ?>
+                </div>
             </div>
         </div>
     </div>

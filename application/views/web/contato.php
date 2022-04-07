@@ -35,6 +35,9 @@
               </div>
             </div>
             <div class="uk-margin">
+              <label class="labelCheck"><input class="uk-checkbox" type="checkbox"> Concordo em receber comunicações do Sala 03</label>
+            </div>
+            <div class="uk-margin">
               <button class="uk-button uk-button-default uk-width-1-1" type="submit">Quero Receber um contato</button>
             </div>
           </form>

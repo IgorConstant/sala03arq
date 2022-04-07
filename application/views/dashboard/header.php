@@ -28,7 +28,7 @@
 
 <body>
 
-    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-3 shadow">
+    <header class="navbar navbar-dark sticky-top flex-md-nowrap p-3 shadow">
         <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Sala03 Arq</a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -82,5 +82,11 @@
                             <?php echo anchor('backup/gerarsql', '<i class="fas fa-cloud-download-alt"></i> Backup SQL</span>', array('class' => 'nav-link')) ?>
                         </li>
                     </ul>
+                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">Dark Mode</h6>
+                    <div class="toggle-contents-wrapper nav-link">
+                        <div id="darkModeSwitch" class="toggle-wrapper">
+                            <div class="toggle-dot"></div>
+                        </div>
+                    </div>
                 </div>
             </nav>

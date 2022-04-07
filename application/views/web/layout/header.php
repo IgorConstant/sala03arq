@@ -27,20 +27,18 @@
 <body>
 
     <header>
-        <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky;">
-            <nav class="uk-navbar-container" uk-navbar="dropbar: true;" style="position: relative; z-index: 980;">
-                <div class="uk-navbar-left">
-                    <div class="brandSala03">
-                        <img src="<?php echo base_url('assets/site/images/logo-sala03.png') ?>" alt="Logo Sala 03">
-                    </div>
+        <nav class="uk-navbar-container" uk-navbar="dropbar: true;" style="position: relative; z-index: 980;">
+            <div class="uk-navbar-left">
+                <div class="brandSala03">
+                    <img src="<?php echo base_url('assets/site/images/logo-sala03.png') ?>" alt="Logo Sala 03">
                 </div>
-                <div class="uk-navbar-right">
-                    <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-flip">
-                        <img src="assets/site/images/icone-menu.png" alt="Ícone Menu">
-                    </button>
-                </div>
-            </nav>
-        </div>
+            </div>
+            <div class="uk-navbar-right">
+                <button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-flip">
+                    <img src="assets/site/images/icone-menu.png" alt="Ícone Menu">
+                </button>
+            </div>
+        </nav>
     </header>
 
     <!-- OffCanvas -->
