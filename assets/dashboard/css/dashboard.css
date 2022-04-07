@@ -1,3 +1,23 @@
+:root {
+	/* LIGHT THEME COLORS */
+	--light-theme-base: #bdbdbd;
+	--light-theme-background: #FFFFFF;
+	--light-theme-shadow: rgba(18, 18, 18, .3);
+	--light-theme-primary: #6200EE;
+	--light-theme-primary-dark: #3700B3;
+	--light-theme-secondary: #03DAC6;
+	--light-theme-secondary-dark: #018786;
+	--light-theme-error-color: #B00020;
+	/* DARK THEME COLORS */
+	--dark-theme-base: #1d1d1d;
+	--dark-theme-background: #121212;
+	--dark-theme-shadow: rgba(255, 255, 255, .3);
+	--dark-theme-primary: #BB86FC;
+	--dark-theme-primary-dark: #3700B3;
+	--dark-theme-secondary: #03DAC6;
+	--dark-theme-error-color: #CF6679;
+}
+
 body {
 	font-size: 0.875rem;
 	font-family: "Roboto Condensed", sans-serif !important;
@@ -132,9 +152,9 @@ body {
 	padding-top: 0.75rem;
 	padding-bottom: 0.75rem;
 	font-size: 1rem;
-	box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.25);
 	font-weight: 700;
 	text-transform: uppercase;
+	color: #000 !important;
 }
 
 .navbar .navbar-toggler {
@@ -146,6 +166,10 @@ body {
 	padding: 0.75rem 1rem;
 	border-width: 0;
 	border-radius: 0;
+}
+
+.navbar .nav-link {
+	color: #000000 !important;
 }
 
 .form-control-dark {
@@ -237,4 +261,36 @@ table.dataTable thead td {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+
+.toggle-contents-wrapper {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.toggle-wrapper {
+	background-color: var(--dark-theme-background);
+	border: 2px solid var(--dark-theme-background);
+	border-radius: 35px;
+	box-shadow: 1px 1px 5px var(--light-theme-shadow);
+	display: flex;
+	justify-content: flex-start;
+	width: 3.5em;
+	min-width: 3.5em;
+}
+
+.toggle-dot {
+	background-color: var(--light-theme-background);
+	box-shadow: 1px 1px 3px var(--light-theme-shadow);
+	margin: 2px;
+	border-radius: 35px;
+	height: 1.5em;
+	width: 1.5em;
+}
+
+.toggle-is-active {
+	justify-content: flex-end;
 }
