@@ -27,7 +27,7 @@ function gulpJS() {
 	return gulp.src([
 			'node_modules/uikit/dist/js/uikit-core.min.js',
 			'node_modules/uikit/dist/js/uikit.min.js',
-			'scripts/googleMap.js',
+			'scripts/googleMap.js'
 		])
 
 		.pipe(concat('main.js'))
