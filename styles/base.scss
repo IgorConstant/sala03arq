@@ -9,6 +9,10 @@ html,
 	-webkit-font-smoothing: antialiased;
 }
 
+figure {
+	margin-bottom: 10px;
+}
+
 h1,
 h2,
 h3,
@@ -47,7 +51,7 @@ h6 {
 #map {
 	position: relative;
 	z-index: 1;
-	height: 583px;
+	height: 615px;
 
 	.gm-style-iw-d {
 

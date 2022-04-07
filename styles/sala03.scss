@@ -1,8 +1,6 @@
 #sala03 {
 	.content {
-		width: 312px;
-		height: 491px;
-		padding: 20% 0 0 0;
+		padding: 10% 8%;
 
 		h2 {
 			text-transform: uppercase;
@@ -17,22 +15,34 @@
 		}
 	}
 
-	.funcionariosSala03 {
-		.contentTitle {
-			text-align: center;
-			padding: 0px 0;
+	.sliderSala03 {
+		.gap {
+			margin: 0 0 0 10px;
+		}
 
-			h1 {
-				text-transform: uppercase;
-				font-weight: 500;
-				font-size: 75px;
-			}
+		.gap-right {
+			margin-right: 10px;
+		}
+	}
+
+	.equipeSala03 {
+		padding: 80px 0;
+
+		h1 {
+			font-style: normal;
+			font-weight: 300;
+			font-size: 60px;
+			line-height: 24px;
+			text-align: center;
+			letter-spacing: 0.05em;
+			color: #9D9D9C;
+			text-transform: uppercase;
 		}
 
 		.photoEquip {
-			position: relative;
+			margin: 50px 0 0 0;
 
-			> img {
+			.image {
 				-webkit-filter: grayscale(100%);
 				filter: grayscale(100%);
 				filter: gray;
@@ -40,58 +50,6 @@
 				width: 100%;
 				height: auto;
 			}
-
-			.overlay {
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				height: 100%;
-				width: 100%;
-				opacity: 0;
-				transition: 0.5s ease;
-				background: rgba(0, 0, 0, 0.9);
-			}
 		}
-
-		.photoEquip:hover .overlay {
-			opacity: 1;
-		}
-
-		.nomeFuncionario {
-			color: white;
-			font-size: 23px;
-			line-height: 24px;
-			font-weight: 700;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			-webkit-transform: translate(-50%, -50%);
-			-ms-transform: translate(-50%, -50%);
-			transform: translate(-50%, -50%);
-			text-align: center;
-		}
-
-		.cargoFuncionario {
-			position: absolute;
-			top: 60%;
-			left: 50%;
-			-webkit-transform: translate(-50%, -50%);
-			-ms-transform: translate(-50%, -50%);
-			transform: translate(-50%, -50%);
-			text-align: center;
-			font-style: normal;
-			font-weight: 300;
-			font-size: 18px;
-			line-height: 24px;
-			color: #ffffff;
-		}
-	}
-
-	.line {
-		width: 315px;
-		height: 1.5px;
-		background: #d1d1d1;
 	}
 }

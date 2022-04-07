@@ -66,6 +66,15 @@
 			color: #000000;
 		}
 
+		.labelCheck {
+			font-size: 14px;
+			color: #000000;
+		}
+
+		.uk-checkbox {
+			border: 1px solid #000000;
+		}
+
 		.uk-button-default {
 			background: #000000;
 			border: 1px solid #000000;
@@ -73,7 +82,7 @@
 			color: #ffffff;
 
 			transition: all 0.3s ease 0s;
-			margin-top: 15px;
+			margin-top: 5px;
 
 			&:hover {
 				box-shadow: 0px 15px 20px rgba(53, 19, 18, 0.4);
