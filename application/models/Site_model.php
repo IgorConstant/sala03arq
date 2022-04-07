@@ -15,6 +15,11 @@ class Site_model extends CI_Model
     {
         return $this->db->get('app_funcionarios')->result();
     }
+
+    public function listarConteudo()
+    {
+        return $this->db->get('app_content')->result();
+    }
 }
 
 /* End of file ModelName.php */
