@@ -36,11 +36,11 @@ class Conteudo extends CI_Controller
         if ($this->form_validation->run() == TRUE) {
 
 
-            $inputEditarConteudo['texto_home'] = $this->input->post('textoConteudo');
-            $inputEditarConteudo['titulo_home'] = $this->input->post('tituloConteudo');
+            $inputEditarConteudo['conteudo'] = $this->input->post('textoConteudo');
+            $inputEditarConteudo['titulo'] = $this->input->post('tituloConteudo');
 
             $this->conteudo_model->atualizarConteudo($inputEditarConteudo, ['id' => $this->input->post('idConteudo')]);
-            redirect('conteudo', 'refresh');
+            redirect('admin', 'refresh');
         
         } else {
             $data['titulo_pagina'] = 'Editar A Sala 03';

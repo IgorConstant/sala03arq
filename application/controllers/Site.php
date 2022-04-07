@@ -34,6 +34,7 @@ class Site extends CI_Controller
     {
         $data['titulo_pagina'] = 'Sala 03 Arquitetura';
         $data['app_funcionarios'] = $this->site_model->listarEquipe();
+        $data['app_conteudo'] = $this->site_model->listarConteudo();
 
         $this->load->view('web/layout/header', $data);
         $this->load->view('web/a-sala03');
