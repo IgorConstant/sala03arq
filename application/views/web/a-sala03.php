@@ -46,11 +46,13 @@
             <h1 class="uk-text-center uk-margin-remove">Nossa equipe</h1>
 
             <div class="photoEquip">
-                <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-text-center" uk-grid>
+                <div class="uk-child-width-1-2@s uk-child-width-1-4@m" uk-grid>
                     <?php foreach ($app_funcionarios as $equipe) { ?>
                         <div>
                             <div>
                                 <img class="image" src="upload/equipe/<?= $equipe->foto_funcionario ?>" alt="<?= $equipe->nome_funcionario ?>">
+                                <p class="nomeFuncionario"><?= $equipe->nome_funcionario ?></p>
+                                <p class="cargoFuncionario"><?= $equipe->cargo_funcionario ?></p>
                             </div>
                         </div>
                     <?php } ?>

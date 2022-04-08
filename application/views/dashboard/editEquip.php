@@ -49,6 +49,7 @@
             <div class="form-group">
                 <button type="button" class="btn btn-outline-warning mb-3 btn-trocar"><i class="fas fa-exchange-alt"></i> Trocar foto</button>
                 <button type="button" class="btn btn-outline-danger mb-3 btn-cancelar"><i class="fas fa-ban"></i> Cancelar</button>
+                <br>
                 <input type="file" name="fotoFuncionario" class="form-control-file input-change-file hide" id="exampleFormControlFile1" required="" disabled="">
             </div>
 
