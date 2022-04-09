@@ -14,26 +14,40 @@
 
     <div class="row">
         <div class="col-12 col-sm-12 mb-4">
-            <?= form_open_multipart() ?>
-            <div class="form-group mb-3">
-                <?= form_label('Nome do Projeto') ?>
-                <?= form_input([
-                    'type' => 'text',
-                    'class' => 'form-control',
-                    'name' => 'tituloProjeto',
-                    'required' => ''
-                ]) ?>
-            </div>
-            <div class="form-group mb-3">
-                <?= form_label('Nome do Projeto') ?>
-                <?= form_input([
-                    'type' => 'text',
-                    'class' => 'form-control',
-                    'name' => 'tituloProjeto',
-                    'required' => ''
-                ]) ?>
-            </div>
-            <?= form_close() ?>
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label for="tituloProjeto" class="form-label">Título do Projeto</label>
+                            <input type="text" class="form-control" id="tituloProjeto" name="tituloProjeto">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label for="localizacaoProjeto" class="form-label">Localização</label>
+                            <input type="text" class="form-control" id="localizacaoProjeto" name="localizacaoProjeto">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="mb-3">
+                            <label for="categoriaProjeto" class="form-label">Categoria do Projeto</label>
+                            <input type="text" class="form-control" id="categoriaProjeto" name="categoriaProjeto">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <label for="fichaTecnica" class="form-label">Ficha Técnica</label>
+                            <textarea class="form-control" id="fichaTecnica" name="fichaTecnica" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <label for="equipeProjeto" class="form-label">Equipe</label>
+                            <textarea class="form-control" id="equipeProjeto" name="equipeProjeto" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </main>
