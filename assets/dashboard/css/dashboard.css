@@ -148,6 +148,10 @@ body {
  * Navbar
  */
 
+.navbar {
+	background: #fff;
+}
+
 .navbar-brand {
 	padding-top: 0.75rem;
 	padding-bottom: 0.75rem;
