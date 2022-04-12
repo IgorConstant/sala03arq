@@ -17,20 +17,11 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="<?php echo base_url("assets/dashboard/images/favicon-sala03.png") ?>" type="image/x-icon">
 
-    <!-- FileUpload -->
-    <link rel="stylesheet" href="<?php echo base_url("assets/dashboard/fileupload/css/jquery.fileupload.css") ?>">
-    <link rel="stylesheet" href="<?php echo base_url("assets/dashboard/fileupload/css/jquery.fileupload-ui.css") ?>">
-    <link rel="stylesheet" href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <!-- Upload -->
+    <link rel="stylesheet" href="<?php echo base_url('assets/dashboard/js/upload/jquery.fileuploader-theme-thumbnails.css') ?>">
+    <link rel="stylesheet" href="<?php echo base_url('assets/dashboard/js/upload/jquery.fileuploader.css') ?>">
 
-    <!-- NOSCRIPT -->
-    <noscript>
-        <link rel="stylesheet" href="<?php echo base_url("assets/fileupload/css/jquery.fileupload-noscript.css") ?>">
-    </noscript>
-    <noscript>
-        <link rel="stylesheet" href="<?php echo base_url("assets/fileupload/css/jquery.fileupload-ui-noscript.css") ?>">
-    </noscript>
 
-    
     <!-- CSS -->
     <link rel="stylesheet" href="<?php echo base_url('assets/dashboard/css/dashboard.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/dashboard/css/bootstrap.min.css') ?>">

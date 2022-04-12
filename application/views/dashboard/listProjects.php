@@ -13,10 +13,25 @@
             <table id="mainTable" class="table table-bordered align-middle">
                 <thead class="table-dark">
                     <tr>
+                        <th>ID</th>
                         <th>Título do Projeto</th>
-                        <th>Ativo</th>
+                        <th>Localização</th>
                         <th>Ações</th>
                     </tr>
+
+                <tbody>
+                    <?php foreach ($app_projetos as $projetos) { ?>
+                        <tr>
+                            <td><?= $projetos->id ?></td>
+                            <td><?= $projetos->titulo_projeto ?></td>
+                            <td><?= $projetos->localizacao ?></td>
+                            <td class="text-center">
+                                <?= anchor('portfolio/editarprojeto/' . $projetos->id, '<i class="fas fa-pencil"></i>', array('title' => 'Editar')) ?>
+                                <?= anchor('portfolio/apagarprojeto/' . $projetos->id, '<i class="far fa-trash-alt"></i>', array('title' => 'Excluir')) ?>
+                            </td>
+                        </tr>
+                    <?php } ?>
+                </tbody>
                 </thead>
             </table>
         </div>
