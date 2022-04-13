@@ -36,12 +36,9 @@ class Portfolio_model extends CI_Model
     public function atualizarProjetos($dados = NULL, $condicao = NULL)
     {
         if (is_array($dados) && is_array($condicao)) {
-            $this->db->update('app_project', $dados, $condicao);
+            $this->db->update('app_projects', $dados, $condicao);
         }
     }
 
-    public function multipleImages($image = array())
-    {
-        return $this->db->insert_batch('app_gallery', $image);
-    }
+
 }

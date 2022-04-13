@@ -40,6 +40,27 @@ class Site extends CI_Controller
         $this->load->view('web/a-sala03');
     }
 
+    public function projetos()
+    {
+        $data['titulo_pagina'] = 'Projetos - Sala 03 Arquitetura';
+        $data['app_projetos'] = $this->site_model->listarProjetos();
+
+        $this->load->view('web/layout/header', $data);
+        $this->load->view('web/projetos');
+    }
+
+
+    public function visualizarprojeto($id)
+    {
+        $query = $this->site_model->visualizarProjeto($id);
+        $data['titulo_pagina'] = 'Projetos - Sala 03 Arquitetura';
+        $data['query'] = $query;
+
+
+        $this->load->view('web/layout/header', $data);
+        $this->load->view('web/template-projeto');
+    }
+
 
     public function contato()
     {
