@@ -3,10 +3,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Portfolio_model extends CI_Model
 {
+
     public function listarProjetos()
     {
         return $this->db->get('app_projects')->result();
     }
+
 
     public function criarProjeto($dados = NULL)
     {
@@ -15,7 +17,6 @@ class Portfolio_model extends CI_Model
         }
     }
 
-    //Utilizar a ID do Logo para Buscar
     public function getProjectID($id = NULL)
     {
         if ($id) {
@@ -25,7 +26,6 @@ class Portfolio_model extends CI_Model
         }
     }
 
-    //Apagar Logo
     public function apagarProjeto($id = NULL)
     {
         if ($id) {
@@ -39,7 +39,6 @@ class Portfolio_model extends CI_Model
             $this->db->update('app_project', $dados, $condicao);
         }
     }
-
 
     public function multipleImages($image = array())
     {
