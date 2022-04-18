@@ -32,6 +32,7 @@
 
 			img {
 				transition: 0.5s;
+				max-height: 350px;
 
 				&:hover {
 					transform: scale(1.1);
@@ -60,6 +61,38 @@
 					text-transform: uppercase;
 				}
 			}
+		}
+	}
+}
+
+
+#template {
+	.content {
+		padding: 8%;
+
+		.tituloProjeto {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 46px;
+			letter-spacing: 0.05em;
+			color: #000000;
+
+		}
+
+		span {
+			text-transform: uppercase;
+			font-weight: 700;
+			color: #000000;
+		}
+
+		.fichaTecnica,
+		.localizacao,
+		.equipe {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			letter-spacing: 0.1em;
+			color: #000000;
 		}
 	}
 }

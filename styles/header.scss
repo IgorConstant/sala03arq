@@ -100,3 +100,34 @@ header {
 		background: #fff;
 	}
 }
+
+
+@media(max-width: 958px) {
+	.uk-offcanvas-bar {
+		width: 100%;
+		background: #fff;
+
+
+		.uk-nav-primary {
+
+			margin-top: 80px;
+
+			>li {
+
+
+				>a {
+					color: #d1d1d1;
+					font-size: 50px;
+					text-transform: uppercase;
+					letter-spacing: 0.05em;
+					display: flex;
+					justify-content: end;
+
+					&:hover {
+						color: #000000;
+					}
+				}
+			}
+		}
+	}
+}

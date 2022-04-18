@@ -39,6 +39,10 @@
 			color: #9D9D9C;
 			text-transform: uppercase;
 			padding: 80px 0;
+
+			@media(max-width: 999px) {
+				line-height: 55px;
+			}
 		}
 
 		.photoEquip {
