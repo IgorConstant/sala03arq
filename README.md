@@ -1,9 +1,9 @@
 
 # sala03.arq
 
-PT-BR: Novo projeto de site, desenvolvido para o escritório de Arquitetura na cidade de Itu.
+PT-BR: Nesse projeto, o objetivo foi desenvolver um site para o escritório de Arquitetura na cidade de Itu. Usando o framework [Bootstrap](https://getbootstrap.com/), o site será responsivo e o conteúdo (Banners, Controle de Funcionários, Projetos e Galerias.) será gerado dinamicamente. Para o front-end foi utilizado o [UiKit](https://getuikit.com/), framework modular para desenvolvimento de aplicações web.
 
-ENG: New website project, developed for the Architecture office in the city of Itu.
+ENG: In this project, the objective was to develop a website for the architecture office in the city of Itu. Using the [Bootstrap](https://getbootstrap.com/) framework, the site will be responsive and the content (Banners, Employee Control, Projects and Galleries.) will be dynamically generated. For the front-end, [UiKit](https://getuikit.com/), a modular framework for web application development, was used.
 
 
 ## Instalação
@@ -30,7 +30,7 @@ ENG: Install project dependencies using yarn or npm.
 | Roboto Condensed                  | https://fonts.google.com/specimen/Roboto+Condensed?query=Roboto+Condensed  |
 
 
-## EQUIPE
+## Equipe
 
 | Designers e Desenvolvimento                                           | Figma                                               |
 | -----------------                                                     | ---------------------------------------------------------------- |
