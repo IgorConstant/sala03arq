@@ -48,9 +48,9 @@
 
             <button class="uk-offcanvas-close" type="button" uk-close></button>
             <ul class="uk-nav uk-nav-primary">
-                <li><a href="a-sala03">A Sala 03</a></li>
-                <li><a href="projetos">Projetos</a></li>
-                <li><a href="contato">Contato</a></li>
+                <li><a href="<?php echo base_url('a-sala03') ?>">A Sala 03</a></li>
+                <li><a href="<?php echo base_url('projetos') ?>">Projetos</a></li>
+                <li><a href="<?php echo base_url('contato') ?>">Contato</a></li>
                 <div class="socialIcons">
                     <li><a href="https://pt-br.facebook.com/Sala03arquitetura/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
                     <li><a href="https://www.instagram.com/sala03_arquitetura/" target="_blank"><i class="fab fa-instagram"></i></a></li>

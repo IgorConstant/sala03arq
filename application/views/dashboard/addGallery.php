@@ -19,12 +19,6 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="mb-3">
-                            <label for="nomeGaleria" class="form-label">Título da Galeria</label>
-                            <input type="text" class="form-control" id="nomeGaleria" name="nomeGaleria">
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="mb-3">
                             <label for="upload" class="form-label">Fotos</label>
                             <div class="row">
                                 <input type="file" id="upload" name="fotos[]" data-fileuploader-files=''>
@@ -36,7 +30,7 @@
                             <label for="projetoNome" class="form-label">Vincule a um projeto</label>
                             <select id="projetoNome" name="projetoNome" class="form-select">
                                 <?php foreach ($app_nameprojects as $projetos) { ?>
-                                    <option value="<?= $projetos->titulo_projeto ?>"><?= $projetos->titulo_projeto ?></option>
+                                    <option value="<?= $projetos->id ?>"><?= $projetos->titulo_projeto ?></option>
                                 <?php } ?>
                             </select>
                         </div>

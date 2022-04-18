@@ -26,13 +26,16 @@ class Site_model extends CI_Model
         return $this->db->get('app_projects')->result();
     }
 
-    public function visualizarProjeto($id)
-    { 
-        if($id){
-            $this->db->where('id', $id);
-            $this->db->limit(1);
-            return $this->db->get('app_projects');
-        }
+    public function getProjectInd($id = NULL)
+    {
+        $this->db->where('id', $id);
+        return $this->db->get('app_projects')->result();
+    }
+
+    public function getGalleryInd($id = NULL)
+    {
+        $this->db->where('id_app_projects', $id);
+        return $this->db->get('app_gallery')->result();
     }
 }
 

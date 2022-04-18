@@ -10,7 +10,7 @@
                 <?php foreach ($app_projetos as $projetos) { ?>
                     <div>
                         <div class="uk-inline">
-                            <a href="visualizarprojeto/<?= $projetos->id ?>"><img src="upload/galeria/projeto-destaque/<?= $projetos->destaque ?>" alt="<?= $projetos->titulo_projeto ?>"></a>
+                            <a href="projetos/visualizarprojetos/<?= $projetos->id ?>"><img width="500" height="380" src="upload/galeria/projeto-destaque/<?= $projetos->destaque ?>" alt="<?= $projetos->titulo_projeto ?>"></a>
                             <div class="uk-overlay uk-overlay-default uk-position-bottom">
                                 <p class="tituloProjeto"><?= $projetos->titulo_projeto ?></p>
                                 <p class="categoriaProjeto"><?= $projetos->categoria_projeto ?></p>

@@ -10,6 +10,7 @@ class Site extends CI_Controller
         $this->load->helper('url');
         $this->load->helper('text');
         $this->load->model('site_model');
+        $this->load->model('galeria_model');
     }
 
 
@@ -52,9 +53,11 @@ class Site extends CI_Controller
 
     public function visualizarprojeto($id)
     {
-        $query = $this->site_model->visualizarProjeto($id);
         $data['titulo_pagina'] = 'Projetos - Sala 03 Arquitetura';
+        $projectGallery = $this->site_model->getGalleryInd($id);
+        $query = $this->site_model->getProjectInd($id);
         $data['query'] = $query;
+        $data['projectGallery'] = $projectGallery;
 
 
         $this->load->view('web/layout/header', $data);

@@ -89,11 +89,11 @@
                             <?php echo anchor('backup/gerarsql', '<i class="fas fa-cloud-download-alt"></i> Backup SQL</span>', array('class' => 'nav-link')) ?>
                         </li>
                     </ul>
-                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">Dark Mode</h6>
+                    <!-- <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">Dark Mode</h6>
                     <div class="toggle-contents-wrapper nav-link">
                         <div id="darkModeSwitch" class="toggle-wrapper">
                             <div class="toggle-dot"></div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </nav>

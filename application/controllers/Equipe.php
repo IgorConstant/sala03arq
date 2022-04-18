@@ -57,6 +57,7 @@ class Equipe extends CI_Controller
                 $this->session->set_flashdata('msg', '<div class="alert alert-success" role="alert">Funcionário Adicionado com Sucesso!</div>');
                 redirect('equipe', 'refresh');
             }
+        
         } else {
 
 

@@ -59,4 +59,4 @@ $route['home'] = "Site/Home";
 $route['a-sala03'] = "Site/Sala03";
 $route['contato'] = "Site/Contato";
 $route['projetos'] = "Site/Projetos";
-$route['visualizarprojeto/(:any)'] = "Site/VisualizarProjeto/";
+$route['projetos/visualizarprojetos/(:num)'] = "Site/VisualizarProjeto/$1";

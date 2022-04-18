@@ -9,22 +9,21 @@
     </div>
 
     <div class="row">
-        <div class="col-12 col-sm-12">
-            <table id="mainTable" class="table table-bordered align-middle">
-                <thead class="table-dark">
+        <table id="mainTable" class="table table-bordered align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>Imagens</th>
+                    <th class="text-center">Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($app_gallery as $img) { ?>
                     <tr>
-                        <th>Nome Album</th>
-                        <th>Ações</th>
+                        <td><img width="50" class="img-fluid galeriaMin" src="<?php echo base_url('upload/galeria/projetos/' . $img->fotos) ?>" alt="<?= $img->id_app_projects ?>"></td>
+                        <td class="text-center"><?= anchor('galeria/deletargaleria/' . $img->id, '<i class="fas fa-trash-alt"></i>', array('title' => 'Excluir')) ?></td>
                     </tr>
-                </thead>
-                <tbody>
-                    <?php foreach ($app_galeria as $galeria) { ?>
-                        <tr>
-                            <td><?= $galeria->titulo_galeria ?></td>
-                        </tr>
-                    <?php } ?>
-                </tbody>
-            </table>
-        </div>
+                <?php } ?>
+            </tbody>
+        </table>
     </div>
 </main>

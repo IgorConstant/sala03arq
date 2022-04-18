@@ -20,8 +20,7 @@ class Galeria extends CI_Controller
     {
         $data['titulo_site'] = 'Gerenciador';
         $data['titulo_pagina'] = 'Galeria';
-
-        $data['app_galeria'] = $this->galeria_model->listarGalerias();
+        $data['app_gallery'] = $this->galeria_model->listarGalerias();
 
         $this->load->view('dashboard/header', $data);
         $this->load->view('dashboard/listGallery');
@@ -32,8 +31,7 @@ class Galeria extends CI_Controller
     public function adicionargaleria()
     {
 
-        $this->form_validation->set_rules('nomeGaleria', 'Nome Galeria', 'required', array('required' => 'O Campo Título do Projeto é obrigatório'));
-        $this->form_validation->set_rules('projetoNome', 'Projeto Nome', 'required', array('required' => 'O Campo Ficha Técnica é obrigatório'));
+        $this->form_validation->set_rules('projetoNome', 'Projeto Nome', 'required', array('required' => 'É necessário vincular a um projeto'));
 
         if ($this->form_validation->run() == TRUE) {
             $config['upload_path'] = './upload/galeria/projetos';
@@ -58,7 +56,6 @@ class Galeria extends CI_Controller
                     // Uploaded file data
                     $imageData = $this->upload->data();
                     $uploadImgData[$i]['fotos'] = $imageData['file_name'];
-                    $uploadImgData[$i]['titulo_galeria'] = $this->input->post('nomeGaleria');
                     $uploadImgData[$i]['id_app_projects'] = $this->input->post('projetoNome');
                 }
             }
@@ -79,5 +76,25 @@ class Galeria extends CI_Controller
             $this->load->view('dashboard/addGallery');
             $this->load->view('dashboard/footer');
         }
+    }
+
+    public function deletargaleria($id = null)
+    {
+
+        if (!$id) {
+            $this->session->set_flashdata('msg', '<div class="alert alert-danger" role="alert">Erro! Selecione uma Galeria</div>');
+            redirect('galeria', 'refresh');
+        }
+
+        $query = $this->galeria_model->getGallerybyProject($id);
+
+        if (!$query) {
+            $this->session->set_flashdata('msg', '<div class="alert alert-danger" role="alert">Erro! Galeria não encontrada.</div>');
+        }
+
+
+        $this->galeria_model->deletarGaleria($query->id);
+        $this->session->set_flashdata('msg', '<div class="alert alert-success" role="alert">Galeria excluida com sucesso!</div>');
+        redirect('galeria', 'refresh');
     }
 }
