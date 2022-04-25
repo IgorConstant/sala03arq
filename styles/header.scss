@@ -99,6 +99,20 @@ header {
 		width: 850px;
 		background: #fff;
 	}
+
+	.uk-navbar-right {
+		.uk-button-default {
+			text-transform: lowercase;
+
+			&:before {
+				content: "menu";
+			}
+
+			>img {
+				margin-left: 5px;
+			}
+		}
+	}
 }
 
 
@@ -106,6 +120,10 @@ header {
 	.uk-offcanvas-bar {
 		width: 100%;
 		background: #fff;
+
+		.displayOnHover {
+			display: none;
+		}
 
 
 		.uk-nav-primary {
