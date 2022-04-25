@@ -22,19 +22,28 @@
             </div>
         </div>
         <div class="sliderSala03">
-            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true; autoplay-interval: 2000; pause-on-hover: true">
                 <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
                     <li>
-                        <img src="<?php echo base_url("assets/site/images/foto1.png") ?>" alt="">
+                        <img src="<?php echo base_url("assets/site/images/foto1.png") ?>" alt="Foto Escritório">
                     </li>
                     <li class="gap">
-                        <img src="<?php echo base_url("assets/site/images/foto2.png") ?>" alt="">
+                        <img src="<?php echo base_url("assets/site/images/foto2.png") ?>" alt="Foto Escritório">
                     </li>
                     <li class="gap gap-right">
-                        <img src="<?php echo base_url("assets/site/images/foto3.png") ?>" alt="">
+                        <img src="<?php echo base_url("assets/site/images/foto3.png") ?>" alt="Foto Escritório">
                     </li>
-                    <li>
-                        <img src="<?php echo base_url("assets/site/images/foto4.png") ?>" alt="">
+                    <li class="gap-right">
+                        <img src="<?php echo base_url("assets/site/images/foto4.png") ?>" alt="Foto Escritório">
+                    </li>
+                    <li class="gap-right">
+                        <img src="<?php echo base_url("assets/site/images/foto5.jpg") ?>" alt="Foto Escritório">
+                    </li>
+                    <li class="gap-right">
+                        <img src="<?php echo base_url("assets/site/images/foto6.jpg") ?>" alt="Foto Escritório">
+                    </li>
+                    <li class="gap-right">
+                        <img src="<?php echo base_url("assets/site/images/foto7.jpg") ?>" alt="Foto Escritório">
                     </li>
                 </ul>
                 <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
@@ -46,7 +55,7 @@
             <h1 class="uk-text-center uk-margin-remove">Nossa equipe</h1>
 
             <div class="photoEquip">
-                <div class="uk-child-width-1-2@s uk-child-width-1-4@m" uk-grid>
+                <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-small" uk-grid>
                     <?php foreach ($app_funcionarios as $equipe) { ?>
                         <div>
                             <div>
