@@ -48,7 +48,7 @@
 
             <button class="uk-offcanvas-close" type="button" uk-close></button>
             <ul class="uk-nav uk-nav-primary">
-                <li><a href="<?php echo base_url('a-sala03') ?>">A Sala 03</a></li>
+                <li><a href="<?php echo base_url('a-sala03') ?>">Sala 03</a></li>
                 <li><a href="<?php echo base_url('projetos') ?>">Projetos</a></li>
                 <li><a href="<?php echo base_url('contato') ?>">Contato</a></li>
                 <div class="socialIcons">
