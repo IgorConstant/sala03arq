@@ -49,11 +49,11 @@ h6 {
 
 	@media(max-width: 767.98px) {
 		.uk-slideshow-items {
-			min-height: 560px !important;
+			min-height: 700px !important;
 
 			li {
 				>img {
-					height: 565px;
+					height: 100vh;
 					object-fit: cover;
 				}
 			}
