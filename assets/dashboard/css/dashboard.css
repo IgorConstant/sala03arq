@@ -44,10 +44,6 @@ body {
 	}
 }
 
-.border-left-primary {
-	border-left: 0.25rem solid #000000 !important;
-}
-
 .atalho-add,
 .listar-mentores {
 	font-weight: 700;
@@ -158,7 +154,6 @@ body {
 	font-size: 1rem;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #000 !important;
 }
 
 .navbar .navbar-toggler {
@@ -173,7 +168,7 @@ body {
 }
 
 .navbar .nav-link {
-	color: #000000 !important;
+	color: #000000;
 }
 
 .form-control-dark {
@@ -298,3 +293,15 @@ table.dataTable thead td {
 .toggle-is-active {
 	justify-content: flex-end;
 }
+
+
+.marginDecoration {
+	margin-left: 14px;
+}
+
+#mode-remover,
+#mode-toggler {
+	font-size: 13px;
+}
+
+
