@@ -22,6 +22,11 @@
             echo '<div/>';
 
             echo '<div class="form-group">';
+            echo form_label('Citação', 'idCitacao');
+            echo form_input(['type' => 'text', 'class' => 'form-control', 'name' => 'citacaoConteudo', 'id' => 'idCitacao', 'value' => $query->citacao]);
+            echo '<div/>';
+
+            echo '<div class="form-group">';
             echo form_label('Conteúdo da Página', 'idTexto');
             echo form_textarea(['type' => 'text', 'class' => 'form-control summernote', 'name' => 'textoConteudo', 'id' => 'idTexto', 'value' => $query->conteudo]);
             echo '<div/>';

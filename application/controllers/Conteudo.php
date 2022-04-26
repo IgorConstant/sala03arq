@@ -31,6 +31,7 @@ class Conteudo extends CI_Controller
 
         $query = $this->conteudo_model->getConteudoID($id);
         $this->form_validation->set_rules('tituloConteudo', 'Título Conteúdo', 'trim|required');
+        $this->form_validation->set_rules('citacaoConteudo', 'Citação', 'trim|required');
         $this->form_validation->set_rules('textoConteudo', 'Texto Conteúdo', 'trim|required');
 
         if ($this->form_validation->run() == TRUE) {
@@ -38,10 +39,10 @@ class Conteudo extends CI_Controller
 
             $inputEditarConteudo['conteudo'] = $this->input->post('textoConteudo');
             $inputEditarConteudo['titulo'] = $this->input->post('tituloConteudo');
+            $inputEditarConteudo['citacao'] = $this->input->post('citacaoConteudo');
 
             $this->conteudo_model->atualizarConteudo($inputEditarConteudo, ['id' => $this->input->post('idConteudo')]);
             redirect('admin', 'refresh');
-        
         } else {
             $data['titulo_pagina'] = 'Editar A Sala 03';
             $data['query'] = $query;
