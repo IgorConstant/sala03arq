@@ -10,10 +10,10 @@
         <div>
           <div class="content" data-aos="fade-down" data-aos-duration="3000">
             <h4>Fale Conosco</h4>
-            <div class="blockTel"><a href=""><span>Ligue: +55 11</span> 2429.4143</a></div>
+            <div class="blockTel"><a href="tel:+55112494143"><span>Ligue: +55 11</span> 2429.4143</a></div>
             <p>Ou preencha o formulário abaixo e <br> entraremos em contato com você.</p>
           </div>
-          <form action="" method="POST">
+          <form action="<?php echo base_url('site/contato') ?>" method="POST">
             <div class="uk-margin">
               <div class="uk-form-controls">
                 <input class="uk-input" id="inputNome" type="text" name="nomeCliente" placeholder="Nome *" required>
@@ -46,3 +46,8 @@
     </div>
   </div>
 </section>
+
+<!-- Mask -->
+<script type="text/javascript">
+  $("#inputTelefone").mask("(00) 00000-0000");
+</script>

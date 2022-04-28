@@ -7,7 +7,7 @@
                         <?php foreach ($query as $q) { ?>
                             <h1 class="tituloProjeto"><?php echo $q->titulo_projeto; ?></h1>
                             <hr />
-                            <span>Ficha Tecnica</span>
+                            <span>Ficha Técnica</span>
                             <p class="fichaTecnica uk-margin-remove"><?php echo $q->ficha_tecnica; ?></p>
                             <hr />
                             <span>Localização</span>
