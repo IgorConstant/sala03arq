@@ -11,6 +11,8 @@ class Site extends CI_Controller
         $this->load->helper('text');
         $this->load->model('site_model');
         $this->load->model('galeria_model');
+        $this->load->library('form_validation');
+        $this->load->library('email');
     }
 
 
