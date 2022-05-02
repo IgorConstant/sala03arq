@@ -72,9 +72,6 @@
                         <li class="nav-item">
                             <?php echo anchor('galeria', '<span><i class="fas fa-laptop-code"></i> Galeria</span>', array('class' => 'nav-link')) ?>
                         </li>
-                        <li class="nav-item">
-                            <?php echo anchor('contato', '<span><i class="fas fa-laptop-code"></i> Log de Contato</span>', array('class' => 'nav-link')) ?>
-                        </li>
                     </ul>
                     <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
                         <span>Cadastros</span>
