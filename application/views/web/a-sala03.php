@@ -28,7 +28,7 @@
         <div class="uk-child-width-1-2@s uk-child-width-1-2@m" uk-grid>
             <div class="uk-flex uk-flex-middle">
                 <div class="sociosContent" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                    <h3>Caue baldi</h3>
+                    <h3>Cauê baldi</h3>
                     <p class="cargo">Arquiteto Urbanista e Sócio</p>
                     <p class="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     <br>
