@@ -61,6 +61,19 @@
 					text-transform: uppercase;
 				}
 			}
+
+			.imgDestaque {
+
+				@media(min-width: 1024px) and (max-width: 1280px) {
+					width: 500px;
+					height: 380px;
+				}
+
+				@media(min-width: 1366px) and (max-width: 1920px) {
+					width: 700px;
+					height: 400px;
+				}
+			}
 		}
 	}
 }
