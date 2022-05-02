@@ -6,7 +6,7 @@
         </div>
 
         <div class="projects">
-            <div class="uk-child-width-1-2@s uk-child-width-1-3@m  uk-grid-small" uk-grid>
+            <div class="uk-child-width-1-3@s uk-child-width-1-3@m  uk-grid-small" uk-grid>
                 <?php foreach ($app_projetos as $projetos) { ?>
                     <div>
                         <div class="uk-inline">

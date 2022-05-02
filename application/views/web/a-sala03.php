@@ -1,6 +1,6 @@
 <section id="sala03">
     <div class="uk-container-expand">
-        <div class="uk-child-width-1-2@s uk-child-width-1-2@m" uk-grid>
+        <div class="uk-child-width-1-1@s uk-child-width-1-2@m" uk-grid>
             <div>
                 <div>
                     <div class="content" data-aos="fade-right" data-aos-duration="3000">
@@ -25,7 +25,7 @@
 </section>
 <section id="socios">
     <div class="uk-container-expand">
-        <div class="uk-child-width-1-2@s uk-child-width-1-2@m" uk-grid>
+        <div class="uk-child-width-1-1@s uk-child-width-1-2@m" uk-grid>
             <div class="uk-flex uk-flex-middle">
                 <div class="sociosContent" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                     <h3>Cauê baldi</h3>
