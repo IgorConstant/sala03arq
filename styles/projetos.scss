@@ -27,6 +27,11 @@
 	}
 
 	.projects {
+		@media(max-width: 767.98px) {
+			padding: 13px;
+		}
+
+
 		.uk-inline {
 			overflow: hidden;
 
@@ -47,6 +52,10 @@
 					letter-spacing: 0.1em;
 					color: #000000;
 					margin: 0px;
+
+					@media(max-width: 1023px) {
+						font-size: 14px;
+					}
 				}
 
 
@@ -59,6 +68,10 @@
 					letter-spacing: 0.1em;
 					color: #2F2F2F;
 					text-transform: uppercase;
+
+					@media(max-width: 1023px) {
+						font-size: 10px;
+					}
 				}
 			}
 
@@ -72,6 +85,11 @@
 				@media(min-width: 1366px) and (max-width: 1920px) {
 					width: 700px;
 					height: 400px;
+				}
+
+				@media(max-width: 900px) {
+					width: 500px;
+					max-width: 600px;
 				}
 			}
 		}
