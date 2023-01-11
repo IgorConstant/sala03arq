@@ -1,0 +1,147 @@
+#sala03 {
+	.content {
+		padding: 7%;
+
+		h1 {
+			font-weight: 500;
+		}
+
+		p {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 30px;
+			display: flex;
+			align-items: center;
+			letter-spacing: 0.1em;
+			color: #000;
+		}
+
+		@media(max-width: 999px) {
+			padding: 20px 20px 0 20px;
+
+			p {
+				font-size: 20px;
+			}
+		}
+	}
+
+	.textContent {
+		padding: 10% 18% 7% 0;
+
+		p {
+			font-style: normal;
+			font-weight: 400;
+			letter-spacing: 0.1em;
+			color: #000;
+			font-size: 14px;
+		}
+
+		@media(max-width: 999px) {
+			padding: 0px 20px 0 20px;
+
+			.noMargin {
+				margin-top: 0px !important;
+			}
+		}
+	}
+}
+
+
+#socios {
+	background: #F9F9F9;
+
+	.sociosImg {
+		figure {
+			margin: 0px;
+		}
+	}
+
+	.sociosContent {
+		padding: 0 7%;
+
+		@media(max-width: 999px) {
+			padding: 20px;
+		}
+
+		h3 {
+			text-transform: uppercase;
+			font-weight: 700;
+			margin: 5px 0;
+		}
+
+		p {
+			margin: 5px 0;
+		}
+
+		.cargo {
+			color: #9D9D9C;
+			text-transform: uppercase;
+			font-weight: 300;
+		}
+
+		.descricao {
+			color: #000;
+			font-size: 14px;
+		}
+	}
+}
+
+#equipe {
+	.equipeSala03 {
+		padding-bottom: 5%;
+
+
+		h1 {
+			font-style: normal;
+			font-weight: 300;
+			font-size: 60px;
+			line-height: 24px;
+			text-align: center;
+			letter-spacing: 0.05em;
+			color: #9D9D9C;
+			text-transform: uppercase;
+			padding: 80px 0;
+
+			@media(max-width: 999px) {
+				line-height: 55px;
+			}
+		}
+
+		.photoEquip {
+			padding: 10px;
+
+			.image {
+				-webkit-filter: grayscale(100%);
+				filter: grayscale(100%);
+				filter: gray;
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+
+			.nomeFuncionario {
+				text-transform: uppercase;
+				color: #000000;
+				font-weight: 700;
+				font-size: 19px;
+				margin: 15px 0 0 0;
+			}
+
+			.cargoFuncionario {
+				margin: 0px;
+				color: #9D9D9C;
+			}
+		}
+	}
+
+	.titleOld {
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #000;
+		font-size: 14px;
+	}
+
+	.exfuncionarios {
+		font-size: 14px;
+	}
+}

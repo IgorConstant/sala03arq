@@ -1,0 +1,152 @@
+header {
+
+	box-shadow: 0px 5px 15px 1px rgba(0, 0, 0, 0.08);
+
+	.uk-navbar-container {
+
+		padding: 30px 20px;
+
+		@media(min-width: 1200px) {
+			padding: 30px 50px;
+		}
+	}
+
+	.brandSala03 {
+		>img {
+			width: 260px;
+		}
+	}
+
+	.uk-navbar-container:not(.uk-navbar-transparent) {
+		background: #fff;
+	}
+
+	.uk-button-default {
+		border: none;
+
+		>img {
+			width: 87px;
+		}
+	}
+}
+
+.uk-offcanvas-bar {
+	.uk-nav-primary {
+
+		@media(min-width: 1200px) {
+			margin-top: 70px;
+		}
+
+		>li {
+
+
+			>a {
+				color: #d1d1d1;
+				font-size: 60px;
+				text-transform: uppercase;
+				letter-spacing: 0.05em;
+				display: flex;
+				justify-content: end;
+
+				&:hover {
+					color: #000000;
+				}
+			}
+		}
+	}
+
+	.socialIcons {
+		float: right;
+
+		>li {
+			display: inline-block;
+			margin-right: 20px;
+
+			a {
+
+				.fa-linkedin,
+				.fa-instagram {
+					color: #D1D1D1;
+					font-size: 40px;
+
+					&:hover {
+						color: #000000;
+					}
+				}
+
+			}
+		}
+	}
+
+	.uk-close {
+		color: #D1D1D1;
+	}
+
+	.uk-icon>* {
+		width: 40px;
+	}
+
+	p {
+		color: #7E7E7E;
+		font-size: 12px;
+		margin: 80px 0;
+		text-align: right;
+	}
+}
+
+
+@media (min-width: 959px) {
+	.uk-offcanvas-bar {
+		width: 850px;
+		background: #fff;
+	}
+
+	.uk-navbar-right {
+		.uk-button-default {
+			text-transform: lowercase;
+
+			&:before {
+				content: "menu";
+			}
+
+			>img {
+				margin-left: 5px;
+			}
+		}
+	}
+}
+
+
+@media(max-width: 958px) {
+	.uk-offcanvas-bar {
+		width: 100%;
+		background: #fff;
+
+		.displayOnHover {
+			display: none;
+		}
+
+
+		.uk-nav-primary {
+
+			margin-top: 80px;
+
+			>li {
+
+
+				>a {
+					color: #d1d1d1;
+					font-size: 50px;
+					text-transform: uppercase;
+					letter-spacing: 0.05em;
+					display: flex;
+					justify-content: end;
+
+					&:hover {
+						color: #000000;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,129 @@
+#projetos {
+	.content {
+		padding: 4%;
+
+		h1 {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 46px;
+			text-transform: uppercase;
+			letter-spacing: 0.05em;
+			color: #000000;
+		}
+
+		p {
+
+			@media(min-width: 1200px) {
+				width: 666px;
+			}
+
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			letter-spacing: 0.1em;
+
+			color: #000000;
+		}
+	}
+
+	.projects {
+		@media(max-width: 767.98px) {
+			padding: 13px;
+		}
+
+
+		.uk-inline {
+			overflow: hidden;
+
+			img {
+				transition: 0.5s;
+				max-height: 350px;
+
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+
+			.uk-overlay {
+				.tituloProjeto {
+					font-style: normal;
+					font-weight: 500;
+					font-size: 25px;
+					letter-spacing: 0.1em;
+					color: #000000;
+					margin: 0px;
+
+					@media(max-width: 1023px) {
+						font-size: 14px;
+					}
+				}
+
+
+				.categoriaProjeto {
+					margin: 0;
+					font-style: normal;
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 24px;
+					letter-spacing: 0.1em;
+					color: #2F2F2F;
+					text-transform: uppercase;
+
+					@media(max-width: 1023px) {
+						font-size: 10px;
+					}
+				}
+			}
+
+			.imgDestaque {
+
+				@media(min-width: 1024px) and (max-width: 1280px) {
+					width: 500px;
+					height: 380px;
+				}
+
+				@media(min-width: 1366px) and (max-width: 1920px) {
+					width: 700px;
+					height: 400px;
+				}
+
+				@media(max-width: 900px) {
+					width: 500px;
+					max-width: 600px;
+				}
+			}
+		}
+	}
+}
+
+
+#template {
+	.content {
+		padding: 8%;
+
+		.tituloProjeto {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 46px;
+			letter-spacing: 0.05em;
+			color: #000000;
+
+		}
+
+		span {
+			text-transform: uppercase;
+			font-weight: 700;
+			color: #000000;
+		}
+
+		.fichaTecnica,
+		.localizacao,
+		.equipe {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			letter-spacing: 0.1em;
+			color: #000000;
+		}
+	}
+}

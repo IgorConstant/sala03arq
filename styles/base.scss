@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+html,
+* {
+	-webkit-font-smoothing: antialiased;
+}
+
+figure {
+	margin-bottom: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nao-aparece {
+	display: none;
+}
+
+#loader {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #000000 url('../../../assets/site/images/logo-animado.gif') no-repeat center;
+	z-index: 999;
+}
+
+.slideHome {
+	.uk-dotnav {
+		position: relative;
+		margin-top: -30px;
+	}
+
+	.uk-dotnav>.uk-active>* {
+		background-color: #000000;
+	}
+
+	.uk-dotnav>*>* {
+		background: rgba(0, 0, 0, 0.3);
+		width: 15px;
+		height: 15px;
+		border-radius: 0;
+	}
+
+	@media(max-width: 767.98px) {
+		.uk-slideshow-items {
+			min-height: 750px !important;
+
+			li {
+				>img {
+					height: 100vh;
+					object-fit: cover;
+				}
+			}
+		}
+	}
+}
+
+#map {
+	position: relative;
+	z-index: 1;
+	height: 615px;
+
+	.gm-style-iw-d {
+
+		h5,
+		p {
+			font-family: 'Roboto Condensed', sans-serif;
+			color: #000;
+		}
+	}
+}

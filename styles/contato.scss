@@ -1,0 +1,91 @@
+#contato {
+	padding: 100px 0;
+
+	.content {
+		h4 {
+			font-family: "Roboto Condensed";
+			font-weight: 700;
+			font-size: 46px;
+			line-height: 24px;
+			/* or 52% */
+
+			text-align: right;
+			color: #000000;
+			text-transform: uppercase;
+		}
+
+		.blockTel {
+			background: #000000;
+			width: 342px;
+			height: 55px;
+			margin-left: auto;
+			text-align: center;
+
+			a {
+				color: #ffffff;
+				text-decoration: none;
+				font-size: 24px;
+				font-weight: 700;
+				letter-spacing: 0.1em;
+				line-height: 55px;
+
+				span {
+					font-size: 16px;
+					font-weight: 400;
+				}
+			}
+		}
+
+		p {
+			font-family: "Roboto Condensed";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 24px;
+			/* or 150% */
+
+			text-align: right;
+			letter-spacing: 0.1em;
+			color: #000000;
+		}
+	}
+
+	form {
+		.uk-input,
+		.uk-textarea {
+			border: 2px solid #000000;
+		}
+
+		input::placeholder {
+			color: #000000;
+		}
+
+		textarea::placeholder {
+			color: #000000;
+		}
+
+		.labelCheck {
+			font-size: 14px;
+			color: #000000;
+		}
+
+		.uk-checkbox {
+			border: 1px solid #000000;
+		}
+
+		.uk-button-default {
+			background: #000000;
+			border: 1px solid #000000;
+			box-sizing: border-box;
+			color: #ffffff;
+
+			transition: all 0.3s ease 0s;
+			margin-top: 5px;
+
+			&:hover {
+				box-shadow: 0px 15px 20px rgba(53, 19, 18, 0.4);
+				transform: translateY(-7px);
+			}
+		}
+	}
+}
