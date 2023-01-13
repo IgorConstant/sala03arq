@@ -34,13 +34,30 @@ class Postagens extends CI_Controller
 
 
         if ($this->form_validation->run() == TRUE) {
-            $data = array(
-                'tituloPost' => $this->input->post('tituloPost'),
-                'textoPostagem' => $this->input->post('textoPostagem'),
-                'dataPostagem' => date('Y-m-d H:i:s'),
-                'statusPostagem' => 1,
-                'idUsuario' => $this->session->userdata('idUsuario')
+
+            $data['titulo_postagem'] = $this->input->post('tituloPost');
+            $data['texto_postagem'] = $this->input->post('textoPostagem');
+
+            $this->load->library('upload');
+
+
+            $configDestaque = array(
+                'upload_path' => "./upload/posts/destaque/",
+                'allowed_types' => "gif|jpg|png|jpeg",
+                'overwrite' => TRUE,
+                'max_size' => "5000",
+                'encrypt_name' => TRUE,
             );
+
+            $this->upload->initialize($configDestaque);
+            if ($this->upload->do_upload('fotoDestaque')) {
+                echo "Imagem de Destaque enviada com Sucesso! =)";
+                $data['imagem_destaque'] = $this->upload->data('file_name');
+            
+            } else {
+
+                echo $this->upload->display_errors();
+            }
         }
 
 
