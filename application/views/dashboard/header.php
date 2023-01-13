@@ -70,7 +70,7 @@
                             <?php echo anchor('conteudo', '<span><i class="fas fa-laptop-code"></i> A Sala 03</span>', array('class' => 'nav-link')) ?>
                         </li>
                         <li class="nav-item">
-                            <?php echo anchor('postagens', '<span><i class="fas fa-laptop-code"></i> Mídias</span>', array('class' => 'nav-link')) ?>
+                            <?php echo anchor('postagens', '<span><i class="fas fa-laptop-code"></i> Postagens</span>', array('class' => 'nav-link')) ?>
                         </li>
                         <li class="nav-item">
                             <?php echo anchor('portfolio', '<span><i class="fas fa-laptop-code"></i> Portfólio</span>', array('class' => 'nav-link')) ?>

@@ -16,12 +16,41 @@ class Postagens extends CI_Controller
     public function index()
     {
         $data['titulo_site'] = 'Gerenciador';
-        $data['titulo_pagina'] = 'Projetos';
+        $data['titulo_pagina'] = 'Postagens';
 
-        $data['app_projetos'] = $this->portfolio_model->listarProjetos();
 
         $this->load->view('dashboard/header', $data);
-        $this->load->view('dashboard/listProjects');
+        $this->load->view('dashboard/listPostagens');
+        $this->load->view('dashboard/footer');
+    }
+
+
+    public function adicionarpost()
+    {
+
+
+        $this->form_validation->set_rules('tituloPost', 'Titulo Postagem', 'required');
+        $this->form_validation->set_rules('textoPostagem', 'Texto Postagem', 'required');
+
+
+        if ($this->form_validation->run() == TRUE) {
+            $data = array(
+                'tituloPost' => $this->input->post('tituloPost'),
+                'textoPostagem' => $this->input->post('textoPostagem'),
+                'dataPostagem' => date('Y-m-d H:i:s'),
+                'statusPostagem' => 1,
+                'idUsuario' => $this->session->userdata('idUsuario')
+            );
+        }
+
+
+
+        $data['titulo_site'] = 'Módulo Projetos';
+        $data['titulo_pagina'] = 'Adicionar Postagens';
+
+        //Load dos arquivos de layout
+        $this->load->view('dashboard/header', $data);
+        $this->load->view('dashboard/addPost');
         $this->load->view('dashboard/footer');
     }
 }
