@@ -7,6 +7,12 @@ class Postagens extends CI_Controller
     {
         parent::__construct();
 
+        if (!$this->session->userdata('logado') == TRUE) {
+
+            $this->session->set_flashdata('erro_login', '<div class="alert alert-danger" role="alert">Você precisa realizar o login!</div>');
+            redirect('login');
+        }
+
         $this->load->model('postagens_model');
         $this->load->library('form_validation');
         $this->load->helper('url');
@@ -53,7 +59,6 @@ class Postagens extends CI_Controller
             if ($this->upload->do_upload('fotoDestaque')) {
                 echo "Imagem de Destaque enviada com Sucesso! =)";
                 $data['imagem_destaque'] = $this->upload->data('file_name');
-            
             } else {
 
                 echo $this->upload->display_errors();

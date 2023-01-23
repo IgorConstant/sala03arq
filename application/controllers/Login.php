@@ -16,7 +16,7 @@ class Login extends CI_Controller
     public function index()
     {
 
-        //Validação do Form
+        
         $this->form_validation->set_rules('email', 'E-mail', 'trim|required');
         $this->form_validation->set_rules('senha', 'Senha', 'trim|required');
 
