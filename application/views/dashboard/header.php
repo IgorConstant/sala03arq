@@ -95,16 +95,5 @@
                             <?php echo anchor('backup/gerarsql', '<i class="fas fa-cloud-download-alt"></i> Backup SQL</span>', array('class' => 'nav-link')) ?>
                         </li>
                     </ul>
-                    <br>
-                    <ul class="nav flex-column">
-                        <li class="nav-item marginDecoration">
-                            <button id="mode-remover" class="btn hidden" title="Limpar">
-                                &times;
-                            </button>
-                            <button id="mode-toggler" class="btn">
-                                Turn on Javascript 🌓
-                            </button>
-                        </li>
-                    </ul>
                 </div>
             </nav>

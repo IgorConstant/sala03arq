@@ -24,8 +24,6 @@
 <body id="loginView">
 
     <div class="container">
-        <?= $this->session->flashdata('erro_login'); ?>
-
         <div class="row g-0">
             <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12"></div>
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 d-flex align-items-center">
@@ -35,7 +33,14 @@
             </div>
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                 <div class="blockForm">
-                    <form action="" method="POST">
+                    <?php echo validation_errors('<div class="alert alert-danger" role="alert">', '</div>'); ?>
+                    <?php echo $this->session->flashdata('form'); ?>
+                    
+                    <?php
+                    $attributes = array('role' => 'form');
+                    echo form_open('', $attributes);
+                    ?>
+                    <!-- <form role="form" action="" method="POST"> -->
                         <div class="mb-3">
                             <label for="inputEmail" class="form-label">Email</label>
                             <input type="email" class="form-control" name="email" id="inputEmail">
