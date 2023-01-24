@@ -23,9 +23,17 @@ header {
 
 	.uk-button-default {
 		border: none;
+		position: relative;
+		top: -18%;
+		left: 10%;
 
 		>img {
 			width: 87px;
+		}
+
+		&:before {
+			content: "menu";
+			text-transform: lowercase;
 		}
 	}
 }
@@ -105,9 +113,6 @@ header {
 		.uk-button-default {
 			text-transform: lowercase;
 
-			&:before {
-				content: "menu";
-			}
 
 			>img {
 				margin-left: 5px;
