@@ -72,6 +72,17 @@ class Site extends CI_Controller
     }
 
 
+    public function midias()
+    {
+        $data['titulo_pagina'] = 'Mídias - Sala 03 Arquitetura';
+        $data['description'] = 'A Sala 03 Arquitetura é uma empresa que atua no mercado de arquitetura e design de interiores, com foco em projetos residenciais e comerciais.';
+        //$data['app_midias'] = $this->site_model->listarMidias();
+
+        $this->load->view('web/layout/header', $data);
+        $this->load->view('web/midias');
+    }
+
+
     public function contato()
     {
 

@@ -15,32 +15,39 @@
 
     <div class="row">
         <div class="col-12 col-sm-12 mb-4">
-            <form action="" method="post" enctype="multipart/form-data">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="mb-3">
-                            <label for="upload" class="form-label">Fotos</label>
-                            <div class="row">
-                                <input type="file" id="upload" name="fotos[]" data-fileuploader-files=''>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="mb-3">
-                            <label for="projetoNome" class="form-label">Vincule a um projeto</label>
-                            <select id="projetoNome" name="projetoNome" class="form-select">
-                                <?php foreach ($app_nameprojects as $projetos) { ?>
-                                    <option value="<?= $projetos->id ?>"><?= $projetos->titulo_projeto ?></option>
-                                <?php } ?>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="mt-4">
-                            <button type="submit" class="btn btn-outline-success">Criar Galeria</button>
+            <?php echo validation_errors('<div class="alert alert-danger" role="alert">', '</div>'); ?>
+            <?php echo $this->session->flashdata('form'); ?>
+
+            <?php
+            $attributes = array('role' => 'form', 'enctype' => 'multipart/form-data');
+            echo form_open('', $attributes);
+            ?>
+            <!-- <form action="" method="post" enctype="multipart/form-data"> -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label for="upload" class="form-label">Fotos</label>
+                        <div class="row">
+                            <input type="file" id="upload" name="fotos[]" data-fileuploader-files=''>
                         </div>
                     </div>
                 </div>
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label for="projetoNome" class="form-label">Vincule a um projeto</label>
+                        <select id="projetoNome" name="projetoNome" class="form-select">
+                            <?php foreach ($app_nameprojects as $projetos) { ?>
+                                <option value="<?= $projetos->id ?>"><?= $projetos->titulo_projeto ?></option>
+                            <?php } ?>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="mt-4">
+                        <button type="submit" class="btn btn-outline-success">Criar Galeria</button>
+                    </div>
+                </div>
+            </div>
             </form>
         </div>
     </div>

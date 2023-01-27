@@ -11,8 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <!-- CKEditor -->
-    <script src="http://cdn.ckeditor.com/4.7.1/full/ckeditor.js"></script>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7bc0885a91.js"></script>

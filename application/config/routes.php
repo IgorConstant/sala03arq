@@ -58,5 +58,6 @@ $route['translate_uri_dashes'] = FALSE;
 $route['home'] = "Site/Home";
 $route['a-sala03'] = "Site/Sala03";
 $route['contato'] = "Site/Contato";
+$route['midias'] = "Site/Midias";
 $route['projetos'] = "Site/Projetos";
 $route['projetos/:any'] = "Site/VisualizarProjeto";

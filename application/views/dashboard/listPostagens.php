@@ -3,7 +3,7 @@
         <h1 class="h2"><i class="far fa-clipboard"></i> <?php echo $titulo_pagina ?></h1>
         <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group me-2">
-                <?php echo anchor('postagens/adicionarpost', '<i class="fas fa-plus-circle"></i> <span>Adicionar Postagem</span>', array('class' => 'btn btn-outline-success')) ?>
+                <?php echo anchor('postagens/adicionarpostagem', '<i class="fas fa-plus-circle"></i> <span>Adicionar Postagem</span>', array('class' => 'btn btn-outline-success')) ?>
             </div>
         </div>
     </div>
@@ -16,10 +16,21 @@
                     <tr>
                         <td>ID</td>
                         <td>Título da Postagem</td>
-                        <td>Descrição</td>
                         <td>Ações</td>
                     </tr>
                 </thead>
+                <tbody>
+                    <?php foreach ($app_posts as $posts) { ?>
+                        <tr>
+                            <td><?= $posts->id ?></td>
+                            <td><?= $posts->titulo_postagem ?></td>
+                            <td class="text-center">
+                                <?= anchor('postagens/editarpostagem/' . $posts->id, '<i class="fas fa-pencil"></i>', array('title' => 'Editar')) ?>
+                                <?= anchor('postagens/deletarpostagem/' . $posts->id, '<i class="far fa-trash-alt"></i>', array('title' => 'Excluir')) ?>
+                            </td>
+                        </tr>
+                    <?php } ?>
+                </tbody>
             </table>
         </div>
     </div>
