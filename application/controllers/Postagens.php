@@ -85,7 +85,6 @@ class Postagens extends CI_Controller
             $this->postagens_model->addPostagens($data);
             $this->session->set_flashdata('msg', '<div class="alert alert-success">Postagem adicionada com sucesso!</div>');
             redirect('postagens', 'refresh');
-
         } else {
 
             $data['titulo_site'] = 'Gerenciador';
@@ -96,5 +95,26 @@ class Postagens extends CI_Controller
             $this->load->view('dashboard/addPost');
             $this->load->view('dashboard/footer');
         }
+    }
+
+
+    public function editarpostagem($id = NULL)
+    {
+
+        if (!$id) {
+            $this->session->set_flashdata('msg', '<div class="alert alert-danger" role="alert">Erro! Você deve selecionar uma postagem</div>');
+            redirect('postagem', 'refresh');
+        }
+
+        $query = $this->postagens_model->getPostagem($id);
+
+        if (!$query) {
+            $this->session->set_flashdata('msg', '<div class="alert alert-danger" role="alert">Erro! Postagem não encontrada!</div>');
+            redirect('postagem', 'refresh');
+        }
+
+        $this->form_validation->set_rules('tituloPost', 'Titulo Postagem', 'required', array('required' => 'O Campo Título da Postagem é obrigatório!'));
+
+        
     }
 }
